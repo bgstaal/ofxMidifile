@@ -1,3 +1,4 @@
+#pragma once
 #include "MidiFile.h"
 #include "ofConstants.h"
 
@@ -10,7 +11,7 @@ protected:
 	
 public:
 	
-	bool load(std::filesystem::path path);
+	virtual bool load(std::filesystem::path path);
 	smf::MidiFile &get();
 	
 };
